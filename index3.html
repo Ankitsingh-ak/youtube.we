@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Website </title>
+</head>
+<link rel="stylesheet" href="ask.css">
+<style>
+    body {
+        background-image: url('ytlogo2.jpg');
+        background-repeat: no-repeat;
+        background-size: 1550px 950px;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    #logo img {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        width: 200px;
+        height: 150px;
+    }
+
+    #title {
+        border: 3px solid black;
+        position: absolute;
+        top: 140px;
+        left: 40px;
+        width: 140px;
+        font-size: 120%;
+        font-weight: 700;
+        font-family: algerian;
+        border-radius: 15px;
+        padding: 0px 2px;
+    }
+
+    #title:hover {
+        background-color: palegreen;
+        color: brown;
+        cursor: pointer;
+    }
+
+    .para {
+        /* border: 4px solid green; */
+        position: absolute;
+        top: 200px;
+        left: 110px;
+        width: 450px;
+        height: auto;
+        font-size: 500%;
+        font-weight: 900;
+        font-family: cursive;
+        border-radius: 15px;
+        padding: 0px 2px;
+    }
+
+    #w {
+        color: yellow;
+    }
+
+    #to {
+        color: rgb(22, 175, 231);
+    }
+
+    #my {
+        color: black;
+    }
+
+    #yout {
+        color: cyan;
+    }
+
+    #ch {
+        color: rgb(145, 228, 27);
+    }
+
+    #mar {
+        position: absolute;
+        top: 910px;
+        font-size: 200%;
+        font-weight: 700;
+        color: aqua;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .left {
+        display: inline-block;
+        color: white;
+        position: absolute;
+        left: 13px;
+        top: 0px;
+    }
+
+    .yt {
+        position: absolute;
+        top: 960px;
+        left: 21px;
+        font-weight: 900;
+        font-size: 800%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        width: 1470px;
+        border: 4px solid black;
+        background-color: chartreuse;
+        border-radius: 20px;
+    }
+
+    #cake img {
+        position: absolute;
+        top: 1150px;
+        left: 5px;
+        border: 2px solid black;
+        width: 500px;
+        height: 800px;
+    }
+
+    .words {
+        position: absolute;
+        top: 1150px;
+        left: 600px;
+        width: 900px;
+        height: 700px;
+        color: black;
+        font-size: 250%;
+        font-weight: 900;
+    }
+
+    #first {
+        color: red;
+    }
+
+    #second {
+        color: blue;
+    }
+
+    #third {
+        color: green;
+    }
+
+    #forth {
+        color: brown;
+    }
+
+    #fifth {
+        color: black;
+    }
+
+    #src1 img {
+        position: absolute;
+        top: 2230px;
+        left: 5px;
+        width: 700px;
+        height: 400px;
+        border: 8px solid darkmagenta;
+        border-radius: 20px;
+    }
+
+    #src2 img {
+        position: absolute;
+        top: 2230px;
+        right: 5px;
+        width: 700px;
+        height: 400px;
+        border: 8px solid darkmagenta;
+        border-radius: 20px;
+    }
+
+    .char {
+        position: absolute;
+        top: 2000px;
+        left: 5px;
+        justify-content: space-evenly;
+        width: 1500px;
+        font-size: 700%;
+        font-weight: 900;
+        border: 5px solid red;
+        background-color: aqua;
+        border-radius: 20px;
+    }
+
+    .link1 {
+        position: absolute;
+        top: 2150px;
+        left: 80px;
+        /* width: 500px; */
+        font-size: 250%;
+        font-weight: 900;
+        font-family: cursive;
+        border: 5px solid rgb(69, 43, 171);
+        border-radius: 13px;
+
+    }
+
+    #item-1 a {
+        color: black;
+        background-color: yellow;
+        text-decoration: none;
+    }
+
+    #item-1 a:hover {
+        background-color: black;
+        color: yellow;
+    }
+
+    .link2 {
+        position: absolute;
+        top: 2150px;
+        right: 80px;
+        /* width: 500px; */
+        font-size: 250%;
+        font-weight: 900;
+        font-family: cursive;
+        border: 5px solid rgb(69, 43, 171);
+        border-radius: 13px;
+
+    }
+
+    #item-2 a {
+        color: black;
+        background-color: yellow;
+        text-decoration: none;
+    }
+
+    #item-2 a:hover {
+        background-color: black;
+        color: yellow;
+    }
+
+    #left:hover {
+        width: 125px;
+        color: yellow;
+        cursor: pointer;
+        background-color: red;
+        border-radius: 4px;
+    }
+
+    .left img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .mid {
+
+        display: inline-block;
+        width: 1000px;
+        margin: auto 450px;
+        color: darkcyan;
+    }
+
+    .right {
+        display: inline-block;
+        width: 100px;
+        position: absolute;
+        right: 50px;
+        top: 8px;
+        border: 2px solid green;
+        background-color: black;
+    }
+
+    .btn {
+        color: red;
+        font-size: 100%;
+        font-weight: 700;
+    }
+
+    .btn:hover {
+        color: blue;
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: absolute;
+        left: 150px;
+        width: 1000px;
+        display: inline-block;
+        font-size: 100%;
+        height: 10px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        padding: 2px 19px;
+    }
+
+    .navbar li a {
+
+        color: black;
+        border-radius: 3px;
+        font-size: 180%;
+        font-weight: 600;
+        text-decoration: none;
+        border: 2px solid darkgray;
+        background-color: yellow;
+        border-radius: 15px;
+        border-width: 6px;
+        padding: 5px;
+    }
+
+    .navbar li a:hover {
+        color: yellow;
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .pa {
+        border: 5px solid black;
+        border-radius: 20px;
+        padding: 5px 5px;
+        position: absolute;
+        top: 2670px;
+        left: 780px;
+        width: 720px;
+        height: auto;
+        font-size: 210%;
+        font-weight: 900;
+        font-family: cursive;
+        color: red;
+    }
+
+    #bg img {
+        border: 5px solid black;
+        border-radius: 20px;
+        padding: 5px 5px;
+        position: absolute;
+        top: 2670px;
+        left: 5px;
+        width: 720px;
+        height: auto;
+    }
+
+    #fg img {
+        border: 5px solid black;
+        border-radius: 20px;
+        padding: 5px 5px;
+        position: absolute;
+        top: 3450px;
+        left: 780px;
+        width: 720px;
+        height: auto;
+    }
+
+    .exp {
+        border: 5px solid black;
+        border-radius: 20px;
+        padding: 5px 5px;
+        position: absolute;
+        top: 3100px;
+        left: 5px;
+        width: 720px;
+        height: auto;
+        font-size: 210%;
+        font-weight: 900;
+        font-family: cursive;
+        color: red;
+    }
+
+    #a img {
+        border: 5px solid black;
+        border-radius: 50px;
+        padding: 5px 5px;
+        position: absolute;
+        top: 3980px;
+        left: 25px;
+        width: 550px;
+        height: 530px;
+    }
+
+    .a {
+        border: 5px solid black;
+        background-color: chartreuse;
+        border-radius: 20px;
+        padding: 5px 5px;
+        position: absolute;
+        top: 4050px;
+        left: 700px;
+        width: 780px;
+        height: auto;
+        font-size: 210%;
+        font-weight: 900;
+        font-family: cursive;
+        color: red;
+    }
+
+    #a {
+        color: red;
+    }
+
+    #hjp {
+        color: rgb(38, 44, 206);
+    }
+
+    #dr {
+        color: rgb(5, 54, 57);
+    }
+
+    #q {
+        color: black;
+    }
+
+    #jl {
+        color: rgb(128, 67, 3);
+    }
+
+    #gh a:hover {
+        color: yellow;
+        text-decoration: none;
+        background-color: black;
+        border-radius: 20px;
+
+    }
+
+    #d img {
+        border: 5px solid black;
+        border-radius: 50px;
+        padding: 5px 5px;
+        position: absolute;
+        top: 4550px;
+        left: 920px;
+        width: 550px;
+        height: 530px;
+    }
+
+    .d {
+        border: 5px solid black;
+        background-color: chartreuse;
+        border-radius: 20px;
+        padding: 5px 5px;
+        position: absolute;
+        top: 4700px;
+        left: 25px;
+        width: 780px;
+        height: auto;
+        font-size: 210%;
+        font-weight: 900;
+        font-family: cursive;
+        color: red;
+    }
+
+    #last img {
+        /* border: 5px solid black; */
+        position: absolute;
+        top: 4950px;
+        left: 200px;
+        width: 550px;
+        height: 250px;
+    }
+
+    .all {
+        border: 4px solid red;
+        background-color: cyan;
+        position: absolute;
+        top: 5200px;
+        left: 10px;
+        width: 1500px;
+        height: 250px;
+        padding: 50px 0px 0px 0px;
+        font-size: 660%;
+        font-weight: 900;
+        color: red;
+        font-family: algerian;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left" id="png">
+
+            <div class="yt">...Important moment...</div>
+            <div id="cake">
+                <img src="cake.jpg">
+            </div>
+            <div class="words">
+                <div id="first">In this session, I am explaining how we have gained the love of 150k subscribers on
+                    youtube in just 5 months. We are probably amongst the few YouTubers who have gained the fastest 150k
+                    subscribers on youtube.</div>
+
+                <div id="second"> finally we have completed the milestone of 150k subscribers on our youtube channel. 🤩
+                </div>
+
+                <div id="third">That means, 150k dedicated people have joined us in this mission.</div>
+
+                <div id="forth">Now what we have done has been achieved only in one and a half months and only a small
+                    number of YouTubers in the world have achieved this in such a short time!</div>
+
+                <div id="fifth">So perhaps we have joined the list of the fastest YouTubers who have achieved 150k
+                    subscribers in such a short time.</div>
+
+            </div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="https://www.youtube.com/@AnnuBabu-ph9yp">Youtube 1st</a></li>
+                    <li><a href="https://www.youtube.com/@Annumasti07">Youtube 2nd</a></li>
+                    <li><a href="https://www.instagram.com/ankit_singhhhhhhhhhh?igsh=anQxdDBkc2ZxNnNr">Instagram</a>
+                    </li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100028857014103&mibextid=ZbWKwL">Facebook</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">
+                Call us now:-<div>7070855830<div>
+            </button>
+        </div>
+    </header>
+    <div id="src1">
+        <img src="screenshot.png">
+    </div>
+    <div id="src2">
+        <img src="Screenshot2.png">
+    </div>
+    <div class="char">
+        Our Youtube Channels :-
+    </div>
+    <div id="item-1" class="link1">
+        <a href="https://www.youtube.com/@AnnuBabu-ph9yp">Youtube-1 Click & View</a>
+    </div>
+    <div id="item-2" class="link2">
+        <a href="https://www.youtube.com/@Annumasti07">Youtube-2 Click & View</a>
+    </div>
+    <div id="logo">
+        <img src="subs.jpg.png">
+    </div>
+    <div>
+        <span id="title">Temple Viwes</span>
+    </div>
+    <div class="para">
+        <span id="w">Welcome</span>
+        <span id="to">to</span>
+        <span id="my">my</span>
+        <span id="yout">youtube</span>
+        <span id="ch">channel</span>
+    </div>
+    <marquee id="mar">Note:-Please subscribe my channel and press the 🔔 well icon for support me and my team.</marquee>
+    <div class="pa" id="pp">These are my two YouTube channels which are a part of my life. I have reached here today
+        because of your love and blessings. I opened my YouTube channel about six months ago. Which you people loved and
+        today I am at a point where I have more than 200k subscribers on one channel and I have opened the second
+        channel recently. Please give love and blessings to my second channel too so that I can progress in my life and
+        keep entertaining you all like this. In today's era, social media is such a medium through which people progress
+        a lot and I also hope that due to your love, I will also go very far. Just keep your love and blessings.</div>
+    <div id="bg">
+        <img src="yt.jpg" alt="">
+    </div>
+    <div id="fg">
+        <img src="fg.jpg" alt="">
+    </div>
+    <div class="exp">
+        We believe that if we want to be successful in life, then it is very important for us to have patience and it is
+        very important for us to give time to ourselves. I am Dharmendra Babu who handles this channel and I have a team
+        with me and there are three members in our team, me, Ankit and Fighter. Even after hard work, we have reached
+        this milestone of success today. However, we have not yet succeeded until our dream is fulfilled. That's why we
+        are continuing to work hard and doing a lot to entertain you all. You all just keep your love and
+        blessings.Experience the best and the most affordable social media services on the market. YouTube Growth for
+        Everyone. Thank you.
+    </div>
+    <div id="a">
+        <img src="ak.jpg" alt="">
+    </div>
+    <div class="a" id="a">
+        Ankit Singh
+        <br>
+        <span id="hjp">
+            from-Hajipur,Vaishali(Bihar)
+        </span>
+        <br>
+        <span id="dr">
+            Dream:-Web Developer
+        </span>
+        <br>
+        <span id="q">
+            Qualification:-Bachelor in computer application
+        </span>
+        <br>
+        <span id="jl">
+            From Jamuni lal college Hajipur(Vaishali)
+        </span>
+        <br>
+        Youtube:-
+        <span id="gh">
+            <a href="https://www.youtube.com/@Ankitdev0">Click and check</a>
+        </span>
+        <br>
+        Facebook:-
+        <span id="gh">
+            <a href="https://www.facebook.com/profile.php?id=100028857014103&mibextid=ZbWKwL">Click and check</a>
+        </span>
+        <br>
+        Instagram:-
+        <span id="gh">
+            <a href="https://www.instagram.com/ankit_singhhhhhhhhhh?igsh=anQxdDBkc2ZxNnNr">Click and check</a>
+        </span>
+    </div>
+    <div id="d">
+        <img src="dk.jpg" alt="">
+    </div>
+    <div class="d" align="right">
+        <span id="q">
+            Dharmendra Babu
+        </span>
+        <br>
+        <span id="jl">
+            From-Hajipur,Vaishali(Bihar)
+        </span>
+        <br>
+        <span id="q">
+            Dream:-Youtuber
+        </span>
+        <br>
+        Youtube:-
+        <span id="gh">
+            <a href="https://www.youtube.com/@Ankitdev0">Click and check</a>
+        </span>
+        <br id="tk">
+        Facebook:-
+        <span id="gh">
+            <a href="https://www.facebook.com/dharmendra.babu.927543?mibextid=ZbWKwL">Click and check</a>
+        </span>
+        <br id="tk">
+        Instagram:-
+        <span id="gh">
+            <a href="https://www.instagram.com/_dharmendra_solider?igsh=MTBpNXpweXJ5eGIwdA==">Click and check</a>
+        </span>
+    </div>
+    <div id="last">
+        <img src="subs.jpg.png">
+    </div>
+    <div class="all">
+        🥰Thanks for watching.😘
+    </div>
+</body>
+
+</html>
